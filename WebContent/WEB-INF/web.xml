@@ -8,7 +8,7 @@
 
 	<context-param>
 		<param-name>jdbcURL</param-name>
-		<param-value>jdbc:mysql://localhost:3306/bookstore</param-value>
+		<param-value>jdbc:mysql://localhost:3306/phoneBook</param-value>
 	</context-param>
 
 	<context-param>
@@ -23,12 +23,12 @@
 
 	<servlet>
 		<servlet-name>ControllerServlet</servlet-name>
-		<servlet-class>net.codejava.javaee.bookstore.ControllerServlet</servlet-class>
+		<servlet-class>autosuggest.ControllerServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>ControllerServlet</servlet-name>
-		<url-pattern>/</url-pattern>
+		<url-pattern>/getNames</url-pattern>
 	</servlet-mapping>
 
 	<error-page>
